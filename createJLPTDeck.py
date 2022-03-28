@@ -150,10 +150,19 @@ def makeFurigana(kanjiIn, kanaIn):
 	outWord = outWord + kanjiIn[lastMatchLoc:]
 	return outWord
 
+def usuallyKanaReading(furiganaReading, japanese, sense):
+	"""
+	Takes the table and a column of bools (true when word is usually kana only), and returns the expected reading expression
 
-# vectorize the function
-vmakeFurigana = np.vectorize(makeFurigana)
+	Args:
+			furiganaReading: reading of the word, with furigana (e.g. having called makeFurigana first)
+			reading: just the hiragana/katakana of the word
+			bUsuallyKana: whether the word is usually kana
+	"""
 
+	j = japanese[0]["reading"]
+	s = sense[0]["tags"]
+	return j if ("Usually written using kana alone" in s) else furiganaReading
 
 def getAllOfGroup(group, fileName=""):
 	"""SLOW OPERATION. Download all the words for a `group` from Jisho and save into a json file.
@@ -259,8 +268,12 @@ def convertJSONtoTable(inFileName, outCsv, cardType):
 		lambda x: x[: re.search("-\d$", x).span()[0]] if re.search("-\d$", x) else x
 	)
 	# be sure to use the tidied-up slug data
-	outData["reading"] = vmakeFurigana(
+	outData["reading"] = np.vectorize(makeFurigana)(
 		outData["slug"], pddata["japanese"].str[0].str["reading"]
+	)
+	# Usually kana ensure reading is kana
+	outData["reading"] = np.vectorize(usuallyKanaReading)(
+		outData["reading"], pddata["japanese"], pddata["senses"]
 	)
 	# jlpt level - joined sorted list
 	outData["jlpt"] = pddata["jlpt"].apply(lambda x: " ".join(sorted(x)))
