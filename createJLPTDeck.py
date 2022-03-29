@@ -2,6 +2,7 @@ import json, urllib.request, urllib.parse, re, os.path
 import time
 import argparse
 import logging
+from typing import TextIO
 
 import pandas as pd
 import numpy as np
@@ -14,7 +15,7 @@ folder_name = "generated"
 logging.basicConfig(level=logging.ERROR,
 	format='%(asctime)s %(levelname)s %(message)s',)
 
-def getJapJs(e):
+def getJapJs(e: str):
 	"""Get the results of Jisho.org for the word or search 'e', in JSON form
 
 	Args:
@@ -42,7 +43,7 @@ def getJapJs(e):
 	return result
 
 
-def getAudio(wordKanji, wordKana, saveDir, excludeFile):
+def getAudio(wordKanji: str, wordKana: str, saveDir: str, excludeFile: TextIO) -> bool:
 	"""Download audio from Jisho.org for word
 
 	Args:
@@ -87,10 +88,10 @@ def getAudio(wordKanji, wordKana, saveDir, excludeFile):
 vgetAudio = np.vectorize(getAudio)
 
 
-def makeFurigana(kanjiIn, kanaIn):
+def makeFurigana(kanjiIn: str, kanaIn: str) -> str:
 	"""Generate a furigana word from associated kanji and kana. Is able to handle words with kana between the kanji.
 
-	E.g. (掃除する, そうじする) becomes　掃除[そうじ]する
+	E.g. (掃除する, そうじする) becomes 掃除[そうじ]する
 
 	Args:
 			kanjiIn (string): Kanji of the word (can include kana as well).
@@ -114,41 +115,42 @@ def makeFurigana(kanjiIn, kanaIn):
 	lastMatchLoc = 0
 	fk = []
 	# for each kanji in the word
-	for m in re.finditer("[一-龯々]+", kanjiIn):
-		kanjiWordPos = m.span()[0]
-		kanaWordPos = kanjiWordPos + tt
+	if kanjiIn:
+		for m in re.finditer("[一-龯々]+", kanjiIn):
+			kanjiWordPos = m.span()[0]
+			kanaWordPos = kanjiWordPos + tt
 
-		# find the next furigana(s) in the kanji word
-		searchLoc = m.span()[1]
-		m2 = re.search(r"[ぁ-ん]+", kanjiIn[searchLoc:])
-		if m2:
-			# find this kana match in the kana word
-			searchLoc = searchLoc + tt
-			m3 = re.search(m2.group(), kanaIn[searchLoc:])
-			# if no matching found, assume something wrong with the input
-			if not m3:
-				return ""
+			# find the next furigana(s) in the kanji word
+			searchLoc = m.span()[1]
+			m2 = re.search(r"[ぁ-ん]+", kanjiIn[searchLoc:])
+			if m2:
+				# find this kana match in the kana word
+				searchLoc = searchLoc + tt
+				m3 = re.search(m2.group(), kanaIn[searchLoc:])
+				# if no matching found, assume something wrong with the input
+				if not m3:
+					return ""
 
-			# get the kana between these
-			s = kanaIn[kanaWordPos : searchLoc + m3.span()[0]]
+				# get the kana between these
+				s = kanaIn[kanaWordPos : searchLoc + m3.span()[0]]
 
-			# update number of kanas 'eaten' by kanjis
-			tt = tt + m3.span()[0]
+				# update number of kanas 'eaten' by kanjis
+				tt = tt + m3.span()[0]
 
-		else:
-			s = kanaIn[kanaWordPos:]
+			else:
+				s = kanaIn[kanaWordPos:]
 
-		# the furigana'd kanji string, separated by space
-		out = " " + m.group() + f_l + s + f_r
-		outWord = outWord + kanjiIn[lastMatchLoc:kanjiWordPos] + out
-		fk.append(out)
+			# the furigana'd kanji string, separated by space
+			out = " " + m.group() + f_l + s + f_r
+			outWord = outWord + kanjiIn[lastMatchLoc:kanjiWordPos] + out
+			fk.append(out)
 
-		# update position of last kanji searched
-		lastMatchLoc = m.span()[1]
+			# update position of last kanji searched
+			lastMatchLoc = m.span()[1]
 
 	# update the out word for tailing kanas
 	outWord = outWord + kanjiIn[lastMatchLoc:]
-	return outWord
+	return outWord.strip()
 
 def usuallyKanaReading(furiganaReading, japanese, sense):
 	"""
@@ -164,7 +166,7 @@ def usuallyKanaReading(furiganaReading, japanese, sense):
 	s = sense[0]["tags"]
 	return j if ("Usually written using kana alone" in s) else furiganaReading
 
-def getAllOfGroup(group, fileName=""):
+def getAllOfGroup(group: str, fileName: str=""):
 	"""SLOW OPERATION. Download all the words for a `group` from Jisho and save into a json file.
 
 	Args:
@@ -208,22 +210,23 @@ def getAllOfGroup(group, fileName=""):
 		json.dump(allJSResults, jf, indent=3, ensure_ascii=False)
 
 
-def convertJSONtoTable(inFileName, outCsv, cardType):
+def convertJSONtoTable(pddata: pd.DataFrame, cardType: str) -> pd.DataFrame:
 	"""Convert downloaded Jisho json file of vocabulary into a csv file suitable for import into Anki
+	Returns the pandas dataframe 
 
 	Args:
-			inFileName (string): json file name for input
-			outCsv (string): csv file name for output
+			pddata : Dataframe (from downloaded json info)
 			cardType (string [normal/extended]): [normal/extended] are the only valid arguments.
 											normal - contains standard vocabulary card columns.
 											extended - as normal, with sound
+	Returns:
+			DataFrame: card-prepared table
 	"""
 
 	if not (cardType == "normal") and not (cardType == "extended"):
 		print("Unknown card type as input")
 		return
 
-	pddata = pd.read_json(inFileName, orient="split", encoding="utf-8")
 	# tidy up usless columns
 	pddata = pddata.drop(columns=["is_common", "tags", "attribution"])
 
@@ -263,9 +266,9 @@ def convertJSONtoTable(inFileName, outCsv, cardType):
 	outData["grammar"] = pddata["senses"].apply(
 		lambda x: ", ".join(x[0]["parts_of_speech"])
 	)
-	# Get rid of x-1 issues - sometimes words have -1 appended at the end
 	outData["slug"] = pddata["slug"].apply(
-		lambda x: x[: re.search("-\d$", x).span()[0]] if re.search("-\d$", x) else x
+		# Get rid of x-1 issues - sometimes words have -1 appended at the end
+		lambda x: x[: re.search("-[0-9]$", x).span()[0]] if re.search("-[0-9]$", x) else x
 	)
 	# be sure to use the tidied-up slug data
 	outData["reading"] = np.vectorize(makeFurigana)(
@@ -326,10 +329,11 @@ def convertJSONtoTable(inFileName, outCsv, cardType):
 		outData["additional"][i] = l
 	endI = time.time()
 	logging.info(f"Opt version time {str(endI - startI)}")
-	outData.to_csv(outCsv, encoding="utf-8", index=False, header=False)
+
+	return	outData
 
 
-def download_and_generate(N, normal):
+def download_and_generate(N: str, normal: str) -> None:
 	"""Download vocabulary from Jisho for category "N", and generate the "normal" card type.
 	Saves resulting files in the "generated" folder
 
@@ -350,8 +354,12 @@ def download_and_generate(N, normal):
 
 	# Convert jisho json to anki-ready csv
 	logging.info(f"---------- Converting {N}")
+	pddata = pd.read_json(json_file, orient="split", encoding="utf-8")
+	df = convertJSONtoTable(pddata, normal)
+
+	# Write df to file
 	csv_file = os.path.join(folder_name, N + normal + ".csv")
-	convertJSONtoTable(json_file, csv_file, normal)
+	df.to_csv(csv_file, encoding="utf-8", index=False, header=False)
 
 
 def parse_args(argv=None):
