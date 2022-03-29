@@ -56,3 +56,6 @@ Current anki deck should contain the following elements:
 - ("Sound" - audio track of the deck. Optional, only used for `extended` deck type)
 - "jlpt" - the anki-tags, ordered by JLPT. These should be imported as the `tag` field.
 
+## Testing
+
+Some simple tests are included in this repository. Ensure the relevant dev packages are installed by running `pipenv --dev install`. Then run `pytest`. 
