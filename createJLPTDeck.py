@@ -161,8 +161,10 @@ def usuallyKanaReading(furiganaReading, japanese, sense):
 			reading: just the hiragana/katakana of the word
 			bUsuallyKana: whether the word is usually kana
 	"""
-
-	j = japanese[0]["reading"]
+	try:
+		j = japanese[0]["reading"]
+	except:
+		j = ""
 	s = sense[0]["tags"]
 	return j if ("Usually written using kana alone" in s) else furiganaReading
 
@@ -330,10 +332,15 @@ def convertJSONtoTable(pddata: pd.DataFrame, cardType: str) -> pd.DataFrame:
 	endI = time.time()
 	logging.info(f"Opt version time {str(endI - startI)}")
 
+	# drop rows with matching slugs (e.g. 一日 has two entries. Just take the first)
+	rows_orig = len(outData.index)
+	outData = outData.drop_duplicates(subset=['slug'], keep='first')
+	rows_redu = len(outData)
+	logging.info(f"Dropped {rows_orig - rows_redu} rows which contained duplicated slugs")
 	return	outData
 
 
-def download_and_generate(N: str, normal: str) -> None:
+def download_and_generate(N: str, normal: str) -> pd.DataFrame:
 	"""Download vocabulary from Jisho for category "N", and generate the "normal" card type.
 	Saves resulting files in the "generated" folder
 
@@ -342,6 +349,9 @@ def download_and_generate(N: str, normal: str) -> None:
 			normal (string [normal/extended]): [normal/extended] are the only valid arguments.
 											normal - contains standard vocabulary card columns.
 											extended - as normal, with sound
+	
+	Returns: 
+			DataFrame: jlpt table
 	"""
 
 	# Create the generated folder if not present
@@ -360,6 +370,9 @@ def download_and_generate(N: str, normal: str) -> None:
 	# Write df to file
 	csv_file = os.path.join(folder_name, N + normal + ".csv")
 	df.to_csv(csv_file, encoding="utf-8", index=False, header=False)
+	print("fo")
+
+	return df
 
 
 def parse_args(argv=None):

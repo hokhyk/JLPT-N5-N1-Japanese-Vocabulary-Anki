@@ -42,6 +42,7 @@ Within Anki you should have a card type suitable for this deck. See "Note Struct
 - Import into each deck the appropriate .csv file that was generated.
 - Import the common.csv file into the outmost/root deck
 - Import with "import even if existing note has same first field" setting in anki.
+- Import common first, then N1, then N2, e.t.c., and N5 last. This ensures that words tagged with multiple tags (e.g. N3, N5) are listed in the simplest level (N5).
 
 The result should be a fully populated deck of the above structure.
 
@@ -55,7 +56,3 @@ Current anki deck should contain the following elements:
 - "Additional definitions" - other english meanings
 - ("Sound" - audio track of the deck. Optional, only used for `extended` deck type)
 - "jlpt" - the anki-tags, ordered by JLPT. These should be imported as the `tag` field.
-
-## Testing
-
-Some simple tests are included in this repository. Ensure the relevant dev packages are installed by running `pipenv --dev install`. Then run `pytest`. 
