@@ -390,7 +390,6 @@ def download_and_generate(N: str, normal: str) -> pd.DataFrame:
 	# Write df to file
 	csv_file = os.path.join(folder_name, N + normal + ".csv")
 	df.to_csv(csv_file, encoding="utf-8", index=False, header=False)
-	print("fo")
 
 	return df
 
