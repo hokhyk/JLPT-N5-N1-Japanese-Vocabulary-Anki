@@ -35,16 +35,23 @@ The increasing vocabulary structure of JLPT lends itself well to a simple heirar
 				- JLPT N4
 					- JLPT N5
 
-To achieve this in Anki start by creating an empty deck of the above form. The quickest way to do this is create a new deck called "Japanes Vocabulary::N1::N2...::N5". The "::" in Anki means subdeck.
+To achieve this in Anki start by creating an empty deck of the above form. The quickest way to do this is create a new deck called `Core Japanese Vocabulary::JLPT N1::JLPT N2::JLPT N3::JLPT N4::JLPT N5`. The "::" in Anki means subdeck.
 
 Within Anki you should have a card type suitable for this deck. See "Note Structure" below for the suggested layout. Ensure there is a note type suitable before importing the decks. This note type should be selected during the import process.
 
 - Import into each deck the appropriate .csv file that was generated.
 - Import the common.csv file into the outmost/root deck
-- Import with "import even if existing note has same first field" setting in anki.
-- Import common first, then N1, then N2, e.t.c., and N5 last. This ensures that words tagged with multiple tags (e.g. N3, N5) are listed in the simplest level (N5).
+- Import with "Update existing notes when first field matches" setting in anki.
 
-The result should be a fully populated deck of the above structure.
+The result should be a fully populated deck of the above structure. 
+
+N.B. Some cards will be in the incorrect JLPT deck. This occurs because the Jisho search does not correctly find all the appropriate cards for each grade. After populating the list in Anki, manually search for cards by tag (e.g. `tag:jlpt-n1`) and move them to the appropriate deck. Advice would be to start with N1 and move down to N5, so that the N5 tag has priority in placement for the card.
+
+### Card layout
+
+The deck can function well with 2 card types, "recognition" and "recall". Recognition checks the Japanese, while recall tests the english and being able to provide the Japanese in response.
+
+To set up the cards with suggested html and css view the `card_style` folder, which contains 5 files for front, back, and card style. Adjust front and back to ask and test desired fields for the appropriate cards.
 
 ## Note Structure
 
@@ -54,5 +61,6 @@ Current anki deck should contain the following elements:
 - "Reading" - similar to "expression", but with kanji expanded with ruby-ready furigana addition
 - "Grammar" - the grammatical type
 - "Additional definitions" - other english meanings
+- "Formality" - If the word has use in humble, formal (e.t.c.) language
 - ("Sound" - audio track of the deck. Optional, only used for `extended` deck type)
 - "jlpt" - the anki-tags, ordered by JLPT. These should be imported as the `tag` field.
