@@ -3,6 +3,7 @@ import time
 import argparse
 import logging
 from typing import TextIO
+from typing import List
 
 import pandas as pd
 import numpy as np
@@ -168,6 +169,21 @@ def usuallyKanaReading(furiganaReading, japanese, sense):
 	s = sense[0]["tags"]
 	return j if ("Usually written using kana alone" in s) else furiganaReading
 
+def extractFormality(senses: List[str]):
+	"""
+	Extracts the formality tags from a string array
+
+	Args:
+			senses: senses section of the jlpt word info
+	"""
+	tags = senses[0]["tags"]
+	accept = ["Humble (kenjougo) language", "Honorific or respectful (sonkeigo) language", "Polite (teineigo) language"]
+	formalities = []
+	for t in tags:
+		if t in accept:
+			formalities.append(t)
+	return ', '.join(formalities)
+
 def getAllOfGroup(group: str, fileName: str=""):
 	"""SLOW OPERATION. Download all the words for a `group` from Jisho and save into a json file.
 
@@ -211,7 +227,6 @@ def getAllOfGroup(group: str, fileName: str=""):
 	with open(fileName, "w", encoding="utf-8") as jf:
 		json.dump(allJSResults, jf, indent=3, ensure_ascii=False)
 
-
 def convertJSONtoTable(pddata: pd.DataFrame, cardType: str) -> pd.DataFrame:
 	"""Convert downloaded Jisho json file of vocabulary into a csv file suitable for import into Anki
 	Returns the pandas dataframe 
@@ -233,10 +248,10 @@ def convertJSONtoTable(pddata: pd.DataFrame, cardType: str) -> pd.DataFrame:
 	pddata = pddata.drop(columns=["is_common", "tags", "attribution"])
 
 	# initialize depending on card type
-	cols = ["slug", "english_definition", "reading", "grammar", "additional", "jlpt"]
+	cols = ["slug", "english_definition", "reading", "grammar", "additional", "politeness", "jlpt"]
 	if cardType == "extended":
 		pddata["sound"] = ""
-		cols.insert(5, "sound")
+		cols.insert(len(cols)-1, "sound")
 
 		audioSaveDir = "audio/"
 
@@ -266,7 +281,8 @@ def convertJSONtoTable(pddata: pd.DataFrame, cardType: str) -> pd.DataFrame:
 		lambda x: ", ".join(x[0]["english_definitions"])
 	)
 	outData["grammar"] = pddata["senses"].apply(
-		lambda x: ", ".join(x[0]["parts_of_speech"])
+		# remove text from () and []
+		lambda x: re.sub("[\(\[].*?[\)\]]", "", ", ".join(x[0]["parts_of_speech"]))
 	)
 	outData["slug"] = pddata["slug"].apply(
 		# Get rid of x-1 issues - sometimes words have -1 appended at the end
@@ -279,6 +295,10 @@ def convertJSONtoTable(pddata: pd.DataFrame, cardType: str) -> pd.DataFrame:
 	# Usually kana ensure reading is kana
 	outData["reading"] = np.vectorize(usuallyKanaReading)(
 		outData["reading"], pddata["japanese"], pddata["senses"]
+	)
+	# formality of the word
+	outData["politeness"] = np.vectorize(extractFormality)(
+		pddata["senses"]
 	)
 	# jlpt level - joined sorted list
 	outData["jlpt"] = pddata["jlpt"].apply(lambda x: " ".join(sorted(x)))
@@ -351,7 +371,7 @@ def download_and_generate(N: str, normal: str) -> pd.DataFrame:
 											extended - as normal, with sound
 	
 	Returns: 
-			DataFrame: jlpt table
+			DataFrame: jlpt dataframe of JLPT level
 	"""
 
 	# Create the generated folder if not present
