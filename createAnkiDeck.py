@@ -3,9 +3,15 @@ import re
 import math
 
 import genanki
+import logging
 
 from createJLPTDeck import download_and_generate, parse_args
 
+
+logging.basicConfig(
+    level=logging.ERROR,
+    format="%(asctime)s %(levelname)s %(message)s",
+)
 
 class AnkiDeck:
     model = genanki.Model(
@@ -42,7 +48,7 @@ class AnkiDeck:
 
     def gen_decks(self):
         """
-        Create multiple nested decks -> common:N5::N4::N3 etc
+        Create multiple nested decks -> common::N5::N4::N3 etc
         """
         # Construct names
         deck_names = []
@@ -61,6 +67,8 @@ class AnkiDeck:
             for j in range(1, i + 1, 1):
                 deck_name += f"::{deck_layer_names[j]}"
             deck_names.append(deck_name)
+
+        logging.info(f"deck_names {str(deck_names)} ")
 
         # Create decks
         decks = []
@@ -87,6 +95,8 @@ class AnkiDeck:
         Find the easiest deck from a set of tags
         """
         tags = tags.split()
+        logging.info(f"tags {str(tags)} ")
+
         possibles = [0]
         for tag in tags:
             found = re.search("[1-5]$", tag)

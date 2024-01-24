@@ -258,7 +258,7 @@ def convertJSONtoTable(pddata: pd.DataFrame, cardType: str) -> pd.DataFrame:
         print("Unknown card type as input")
         return
 
-    # tidy up usless columns
+    # tidy up useless columns
     pddata = pddata.drop(columns=["is_common", "tags", "attribution"])
 
     # initialize depending on card type
