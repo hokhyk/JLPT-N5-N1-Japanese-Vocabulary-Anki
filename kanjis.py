@@ -47,17 +47,53 @@ def getKanjiList(argv=None):
 def getKanjiResult(argv=None):
     # eword = Word.request('water')
 
-    cchar = Kanji.request('水')
+    # cchar = Kanji.request('哀')
 
-    sentences = Sentence.request('水')
+    # sentences = Sentence.request('水')
 
     # rtokens = Tokens.request('昨日すき焼きを食べました')
 
     # word_requests = scrape(Word, ['water', 'fire'], './generated/')
-    word_requests = scrape(Kanji, ['水', '火'], './generated/')
-# logging.info(f"Searching sentence tokens : {word_requests}")
+    word_requests = scrape(Kanji, ['哀', '火'], './generated/')
+    # logging.info(f"Searching sentence tokens : {word_requests}")
 
+    eword = Word.request('哀愁')
+
+
+def getKanjiResultExtended(argv=None):
+    # eword = Word.request('water')
+
+    # cchar = Kanji.request('哀')
+
+    # sentences = Sentence.request('水')
+
+    # rtokens = Tokens.request('昨日すき焼きを食べました')
+
+    # word_requests = scrape(Word, ['water', 'fire'], './generated/')
+    word_requests = scrape(Kanji, ['哀', '火'], './generated/')
+    # logging.info(f"Searching sentence tokens : {word_requests}")
+
+    eword = Word.request('哀愁')
+    sentences1 = Sentence.request('呼び水')
+    sentences2 = Sentence.request('水揚げ')
+    sentences3 = Sentence.request('飲み水')
+    sentences4 = Sentence.request('水位')
+    sentences5 = Sentence.request('用水')
+    sentences6 = Sentence.request('浄水')
 
 if __name__ == "__main__":
-    # getKanjiList()
+    # 获取N５−N1的单个汉字并生成csv文件。
+    # getKanjiList()　　
+
+    ###
+    # 从获取的N5-N1的单字生成每个单字的json文件，并将这些单字按照N5-N1再生成anki的note。
+    # 这种note再生成汉字单字的学习卡，卡片包含音读及音读组词、训读和训读组词。每个词都是振り仮名。
+    ###
     getKanjiResult()
+
+    ###
+    # 从获取的N5-N1的单字生成每个单字的json文件，并将这些单字按照N5-N1再生成anki的note。
+    # 这种note再生成汉字单字的学习卡，卡片包含音读及音读组词、训读和训读组词。每个词都是振り仮名。每个词都有例句。
+    ###
+    getKanjiResultExtended()
+
