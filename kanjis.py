@@ -1,5 +1,13 @@
 import csv
 import re
+import logging
+
+from jisho_api.word import Word
+from jisho_api.kanji import Kanji
+from jisho_api.sentence import Sentence
+from jisho_api.tokenize import Tokens
+from jisho_api import scrape
+
 
 kanjis = []
 kanjisSet = []
@@ -36,6 +44,20 @@ def getKanjiList(argv=None):
         writer = csv.writer(csvfile)
         writer.writerow(kanjisSet)
 
+def getKanjiResult(argv=None):
+    # eword = Word.request('water')
+
+    cchar = Kanji.request('水')
+
+    sentences = Sentence.request('水')
+
+    # rtokens = Tokens.request('昨日すき焼きを食べました')
+
+    # word_requests = scrape(Word, ['water', 'fire'], './generated/')
+    word_requests = scrape(Kanji, ['水', '火'], './generated/')
+# logging.info(f"Searching sentence tokens : {word_requests}")
+
 
 if __name__ == "__main__":
-    getKanjiList()
+    # getKanjiList()
+    getKanjiResult()

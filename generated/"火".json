@@ -1,0 +1,170 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "data": {
+        "kanji": "\"火\"",
+        "strokes": 4,
+        "main_meanings": [
+            "fire"
+        ],
+        "main_readings": {
+            "kun": [
+                "ひ",
+                "-び",
+                "ほ-"
+            ],
+            "on": [
+                "カ"
+            ]
+        },
+        "meta": {
+            "education": {
+                "grade": null,
+                "jlpt": null,
+                "newspaper_rank": null
+            },
+            "dictionary_idxs": {
+                "13": "A Guide To Reading and Writing Japanese (Florence Sakade)",
+                "15": "Essential Kanji (P.G. O’Neill)",
+                "8": "A Guide To Remembering Japanese Characters (Kenneth G. Henshall)",
+                "432": "A New Dictionary of Kanji Usage",
+                "2743": "Classic Nelson (Andrew Nelson)",
+                "69": "Japanese Kanji Flashcards (Max Hodges and Tomoko Okazaki)",
+                "52": "Japanese Names (P.G. O’Neill)",
+                "1.A": "Japanese for Busy People",
+                "20": "Kanji and Kana, 2nd Edition (Spahn and Hadamitzky)",
+                "18": "Kanji in Context (Nishiguchi and Kono)",
+                "1260": "Kodansha Compact Kanji Guide",
+                "4273": "Kodansha Kanji Dictionary (Jack Halpern)",
+                "2159": "Kodansha Kanji Learner’s Dictionary (Jack Halpern)",
+                "2911": "Kodansha Kanji Learner’s Dictionary, 2nd Edition (Jack Halpern)",
+                "163": "Les Kanjis dans la tete (Yves Maniette)",
+                "18850": "Morohashi",
+                "3463": "New Japanese English Character Dictionary (Jack Halpern)",
+                "3394": "New Nelson (John Haig)",
+                "161": "Remembering The Kanji (James Heisig)",
+                "173": "Remembering The Kanji, 6th edition (James Heisig)",
+                "27": "Tuttle Kanji Cards (Alexander Kask)"
+            },
+            "classifications": {
+                "1162": "2001 Kanji",
+                "4d0.1": "The Kanji Dictionary",
+                "4-4-4": "SKIP code",
+                "1-1-3": "SKIP code",
+                "9080.0": "Four corner code"
+            },
+            "codepoints": {
+                "1-18-48": "JIS X 0208-1997 kuten code",
+                "706b": "Unicode hex code"
+            },
+            "readings": {
+                "japanese": null,
+                "chinese": [
+                    "huo3"
+                ],
+                "korean": [
+                    "hwa"
+                ]
+            }
+        },
+        "radical": {
+            "alt_forms": [
+                "灬"
+            ],
+            "meaning": "fire",
+            "parts": [
+                "火"
+            ],
+            "basis": "火",
+            "kangxi_order": 86,
+            "variants": [
+                "伙"
+            ]
+        },
+        "reading_examples": {
+            "kun": [
+                {
+                    "kanji": "火",
+                    "reading": "ひ",
+                    "meanings": [
+                        "fire",
+                        "flame",
+                        "blaze"
+                    ]
+                },
+                {
+                    "kanji": "火口",
+                    "reading": "ひぐち",
+                    "meanings": [
+                        "burner",
+                        "nozzle",
+                        "origin of a fire"
+                    ]
+                },
+                {
+                    "kanji": "飛び火",
+                    "reading": "とびひ",
+                    "meanings": [
+                        "leaping flames",
+                        "flying sparks",
+                        "spread of fire (due to leaping flames)",
+                        "repercussions in unanticipated areas",
+                        "spilling over",
+                        "effects of an incident spreading to those seemingly uninvolved",
+                        "impetigo contagiosa"
+                    ]
+                },
+                {
+                    "kanji": "不知火",
+                    "reading": "しらぬい",
+                    "meanings": [
+                        "phosphorescent light",
+                        "mysterious lights on the sea",
+                        "sea fire"
+                    ]
+                }
+            ],
+            "on": [
+                {
+                    "kanji": "火",
+                    "reading": "カ",
+                    "meanings": [
+                        "Tuesday",
+                        "fire (second of the five elements)"
+                    ]
+                },
+                {
+                    "kanji": "火炎瓶",
+                    "reading": "カエンビン",
+                    "meanings": [
+                        "Molotov cocktail",
+                        "petrol bomb",
+                        "gasoline bomb"
+                    ]
+                },
+                {
+                    "kanji": "発火",
+                    "reading": "ハッカ",
+                    "meanings": [
+                        "ignition",
+                        "combustion",
+                        "catching fire",
+                        "firing a blank cartridge",
+                        "discharge of a gun without bullets"
+                    ]
+                },
+                {
+                    "kanji": "点火",
+                    "reading": "テンカ",
+                    "meanings": [
+                        "ignition",
+                        "lighting",
+                        "firing",
+                        "setting off"
+                    ]
+                }
+            ]
+        }
+    }
+}

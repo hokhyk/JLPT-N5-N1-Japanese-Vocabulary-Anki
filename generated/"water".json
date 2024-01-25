@@ -1,0 +1,1356 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "data": [
+        {
+            "slug": "水",
+            "is_common": true,
+            "tags": [
+                "wanikani2"
+            ],
+            "jlpt": [
+                "jlpt-n5"
+            ],
+            "japanese": [
+                {
+                    "word": "水",
+                    "reading": "みず"
+                },
+                {
+                    "word": "水",
+                    "reading": "み"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "water (esp. cool, fresh water, e.g. drinking water)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "湯 ゆ"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": [
+                        "み is generally used in compounds"
+                    ]
+                },
+                {
+                    "english_definitions": [
+                        "fluid (esp. in an animal tissue)",
+                        "liquid"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "flood",
+                        "floodwaters"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "water offered to wrestlers just prior to a bout"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Sumo"
+                    ],
+                    "restrictions": [
+                        "みず"
+                    ],
+                    "see_also": [
+                        "力水"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "break granted to wrestlers engaged in a prolonged bout"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Sumo"
+                    ],
+                    "restrictions": [
+                        "みず"
+                    ],
+                    "see_also": [
+                        "水入り"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Water"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Water” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Water?oldid=494683228"
+                        },
+                        {
+                            "text": "Read “水” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/水?oldid=42737804"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "水分",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "水分",
+                    "reading": "すいぶん"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "water",
+                        "liquid",
+                        "fluid",
+                        "moisture",
+                        "humidity",
+                        "sap",
+                        "juice"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Moisture"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Moisture” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Moisture?oldid=495179182"
+                        },
+                        {
+                            "text": "Read “水分” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/水分?oldid=39781168"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "水道",
+            "is_common": true,
+            "tags": [
+                "wanikani8"
+            ],
+            "jlpt": [
+                "jlpt-n4"
+            ],
+            "japanese": [
+                {
+                    "word": "水道",
+                    "reading": "すいどう"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "water supply",
+                        "water service",
+                        "waterworks",
+                        "tap water"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "channel",
+                        "strait"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "water course",
+                        "waterway"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Suidou"
+                    ],
+                    "parts_of_speech": [
+                        "Place"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Water supply"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Water supply” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Water_supply?oldid=492618995"
+                        },
+                        {
+                            "text": "Read “水道” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/水道?oldid=41983719"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "水蒸気",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "水蒸気",
+                    "reading": "すいじょうき"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "water vapour",
+                        "water vapor",
+                        "steam"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Water vapor"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Water vapor” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Water_vapor?oldid=494394123"
+                        },
+                        {
+                            "text": "Read “水蒸気” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/水蒸気?oldid=42433597"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "淡水",
+            "is_common": true,
+            "tags": [
+                "wanikani49"
+            ],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "淡水",
+                    "reading": "たんすい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "fresh water (i.e. not salt water)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Noun which may take the genitive case particle 'no'"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "鹹水"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Fresh water"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Fresh water” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Fresh_water?oldid=494242916"
+                        },
+                        {
+                            "text": "Read “淡水” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/淡水?oldid=42322670"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "お水",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "お水",
+                    "reading": "おみず"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "water",
+                        "(drinking) water",
+                        "(glass of) water"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Polite (teineigo) language"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "night entertainment business",
+                        "nightlife worker",
+                        "hostess"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Colloquial"
+                    ],
+                    "restrictions": [],
+                    "see_also": [
+                        "水商売"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "racy",
+                        "titillating",
+                        "sexy",
+                        "suggestive"
+                    ],
+                    "parts_of_speech": [
+                        "Na-adjective (keiyodoshi)"
+                    ],
+                    "links": [],
+                    "tags": [
+                        "Slang"
+                    ],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "断水",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "断水",
+                    "reading": "だんすい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "suspension of water supply",
+                        "water outage"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb",
+                        "Transitive verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "増水",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "増水",
+                    "reading": "ぞうすい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "rising water (of river, lake, etc.)",
+                        "swelling water",
+                        "increased water",
+                        "high water"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "減水"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "節水",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "節水",
+                    "reading": "せっすい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "saving water",
+                        "water conservation",
+                        "economizing on water"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Water conservation"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Water conservation” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Water_conservation?oldid=495340544"
+                        },
+                        {
+                            "text": "Read “節水” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/節水?oldid=42510325"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "井戸",
+            "is_common": true,
+            "tags": [
+                "wanikani45"
+            ],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "井戸",
+                    "reading": "いど"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "water well"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Water well"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Water well” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Water_well?oldid=495102853"
+                        },
+                        {
+                            "text": "Read “井戸” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/井戸?oldid=42445060"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "噴水",
+            "is_common": true,
+            "tags": [
+                "wanikani52"
+            ],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "噴水",
+                    "reading": "ふんすい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "water fountain"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Fountain"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Fountain” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Fountain?oldid=494818239"
+                        },
+                        {
+                            "text": "Read “噴水” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/噴水?oldid=42651260"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "水筒",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "水筒",
+                    "reading": "すいとう"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "canteen",
+                        "flask",
+                        "water bottle",
+                        "thermos"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Canteen (bottle)"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Canteen (bottle)” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Canteen_(bottle)?oldid=491977665"
+                        },
+                        {
+                            "text": "Read “水筒” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/水筒?oldid=42451639"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "便所",
+            "is_common": true,
+            "tags": [
+                "wanikani11"
+            ],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "便所",
+                    "reading": "べんじょ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "toilet",
+                        "lavatory",
+                        "water closet",
+                        "restroom",
+                        "bathroom"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "トイレ"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Toilet"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Toilet” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Toilet?oldid=494608490"
+                        },
+                        {
+                            "text": "Read “便所” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/便所?oldid=42774491"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "給水",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "給水",
+                    "reading": "きゅうすい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "water supply",
+                        "supplied water",
+                        "water refill"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Suru verb",
+                        "Transitive verb",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "湯",
+            "is_common": true,
+            "tags": [
+                "wanikani12"
+            ],
+            "jlpt": [
+                "jlpt-n4"
+            ],
+            "japanese": [
+                {
+                    "word": "湯",
+                    "reading": "ゆ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "hot water"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "水 みず"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "hot bath",
+                        "hot spring"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "molten iron"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "水牛",
+            "is_common": false,
+            "tags": [],
+            "jlpt": [],
+            "japanese": [
+                {
+                    "word": "水牛",
+                    "reading": "すいぎゅう"
+                },
+                {
+                    "word": null,
+                    "reading": "スイギュウ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "water buffalo (Bubalus bubalis)",
+                        "domestic Asian water buffalo"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "wild water buffalo (Bubalus arnee)",
+                        "Asian water buffalo"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Water buffalo"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Water buffalo” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Water_buffalo?oldid=494782588"
+                        },
+                        {
+                            "text": "Read “スイギュウ” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/スイギュウ?oldid=42701680"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "注ぐ",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n3"
+            ],
+            "japanese": [
+                {
+                    "word": "注ぐ",
+                    "reading": "そそぐ"
+                },
+                {
+                    "word": "灌ぐ",
+                    "reading": "そそぐ"
+                },
+                {
+                    "word": "潅ぐ",
+                    "reading": "そそぐ"
+                },
+                {
+                    "word": "濺ぐ",
+                    "reading": "そそぐ"
+                },
+                {
+                    "word": "漑ぐ",
+                    "reading": "そそぐ"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "to pour (into)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with 'gu' ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "注ぐ つぐ"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to sprinkle on (from above)",
+                        "to water (e.g. plants)",
+                        "to pour onto",
+                        "to spray"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with 'gu' ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to shed (tears)"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with 'gu' ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to concentrate one's energy (strength, attention, etc.) on",
+                        "to devote to",
+                        "to fix (one's eyes) on"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with 'gu' ending",
+                        "Transitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to flow into (e.g. of a river)",
+                        "to run into",
+                        "to drain into"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with 'gu' ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "to fall (of rain, snow)",
+                        "to pour down"
+                    ],
+                    "parts_of_speech": [
+                        "Godan verb with 'gu' ending",
+                        "Intransitive verb"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "手洗い",
+            "is_common": true,
+            "tags": [
+                "wanikani20"
+            ],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "手洗い",
+                    "reading": "てあらい"
+                },
+                {
+                    "word": "手洗",
+                    "reading": "てあらい"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "washing one's hands",
+                        "water (or basin, etc.) for washing one's hands"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "restroom",
+                        "lavatory",
+                        "toilet"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [
+                        "お手洗い"
+                    ],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "hand-washing (laundry, etc.)"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "Hand washing"
+                    ],
+                    "parts_of_speech": [
+                        "Wikipedia definition"
+                    ],
+                    "links": [
+                        {
+                            "text": "Read “Hand washing” on English Wikipedia",
+                            "url": "http://en.wikipedia.org/wiki/Hand_washing?oldid=495481547"
+                        },
+                        {
+                            "text": "Read “手洗い” on Japanese Wikipedia",
+                            "url": "http://ja.wikipedia.org/wiki/手洗い?oldid=41562800"
+                        }
+                    ],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "熱湯",
+            "is_common": true,
+            "tags": [],
+            "jlpt": [
+                "jlpt-n1"
+            ],
+            "japanese": [
+                {
+                    "word": "熱湯",
+                    "reading": "ねっとう"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "boiling water"
+                    ],
+                    "parts_of_speech": [
+                        "Noun",
+                        "Noun which may take the genitive case particle 'no'"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        },
+        {
+            "slug": "水滴",
+            "is_common": true,
+            "tags": [
+                "wanikani47"
+            ],
+            "jlpt": [
+                "jlpt-n2"
+            ],
+            "japanese": [
+                {
+                    "word": "水滴",
+                    "reading": "すいてき"
+                }
+            ],
+            "senses": [
+                {
+                    "english_definitions": [
+                        "drop of water"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                },
+                {
+                    "english_definitions": [
+                        "vessel for replenishing inkstone water"
+                    ],
+                    "parts_of_speech": [
+                        "Noun"
+                    ],
+                    "links": [],
+                    "tags": [],
+                    "restrictions": [],
+                    "see_also": [],
+                    "antonyms": [],
+                    "source": [],
+                    "info": []
+                }
+            ]
+        }
+    ]
+}

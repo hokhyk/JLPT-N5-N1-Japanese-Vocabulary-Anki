@@ -18,3 +18,5 @@ soupsieve==2.2.1; python_version >= '3.0'
 
 genanki
 
+jisho_api
+

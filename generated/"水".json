@@ -1,0 +1,171 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "data": {
+        "kanji": "\"水\"",
+        "strokes": 4,
+        "main_meanings": [
+            "water"
+        ],
+        "main_readings": {
+            "kun": [
+                "みず",
+                "みず-"
+            ],
+            "on": [
+                "スイ"
+            ]
+        },
+        "meta": {
+            "education": {
+                "grade": null,
+                "jlpt": null,
+                "newspaper_rank": null
+            },
+            "dictionary_idxs": {
+                "14": "A Guide To Reading and Writing Japanese (Florence Sakade)",
+                "16": "Essential Kanji (P.G. O’Neill)",
+                "40": "A Guide To Remembering Japanese Characters (Kenneth G. Henshall)",
+                "144": "A New Dictionary of Kanji Usage",
+                "2482": "Classic Nelson (Andrew Nelson)",
+                "68": "Japanese Kanji Flashcards (Max Hodges and Tomoko Okazaki)",
+                "54": "Japanese Names (P.G. O’Neill)",
+                "1.A": "Japanese for Busy People",
+                "21": "Kanji and Kana, 2nd Edition (Spahn and Hadamitzky)",
+                "19": "Kanji in Context (Nishiguchi and Kono)",
+                "1151": "Kodansha Compact Kanji Guide",
+                "10": "New Japanese English Character Dictionary (Jack Halpern)",
+                "3": "Kodansha Kanji Learner’s Dictionary, 2nd Edition (Jack Halpern)",
+                "132": "Les Kanjis dans la tete (Yves Maniette)",
+                "17083": "Morohashi",
+                "3030": "New Nelson (John Haig)",
+                "130": "Remembering The Kanji (James Heisig)",
+                "137": "Remembering The Kanji, 6th edition (James Heisig)",
+                "166": "The Kanji Way to Japanese Language Power (Dale Crowley)",
+                "31": "Tuttle Kanji Cards (Alexander Kask)"
+            },
+            "classifications": {
+                "1142": "2001 Kanji",
+                "3a0.1": "The Kanji Dictionary",
+                "1-1-3": "SKIP code",
+                "4-4-3": "SKIP code",
+                "1223.0": "Four corner code"
+            },
+            "codepoints": {
+                "1-31-69": "JIS X 0208-1997 kuten code",
+                "6c34": "Unicode hex code"
+            },
+            "readings": {
+                "japanese": [
+                    "うず、 ずみ、 つ、 ど、 み、 みさ、 みつ、 みな、 みん"
+                ],
+                "chinese": [
+                    "shui3"
+                ],
+                "korean": [
+                    "su"
+                ]
+            }
+        },
+        "radical": {
+            "alt_forms": [
+                "氵",
+                "氺"
+            ],
+            "meaning": "water",
+            "parts": [
+                "水"
+            ],
+            "basis": "水",
+            "kangxi_order": 85,
+            "variants": null
+        },
+        "reading_examples": {
+            "kun": [
+                {
+                    "kanji": "水",
+                    "reading": "みず",
+                    "meanings": [
+                        "water (esp. cool",
+                        "fresh water",
+                        "e.g. drinking water)",
+                        "fluid (esp. in an animal tissue)",
+                        "liquid",
+                        "flood",
+                        "floodwaters",
+                        "water offered to wrestlers just prior to a bout",
+                        "break granted to wrestlers engaged in a prolonged bout"
+                    ]
+                },
+                {
+                    "kanji": "水揚げ",
+                    "reading": "みずあげ",
+                    "meanings": [
+                        "landing",
+                        "unloading (e.g. a ship)",
+                        "catch (of fish)",
+                        "takings",
+                        "sales (of a shop)",
+                        "defloration (e.g. of a geisha)",
+                        "preservation (of cut flowers",
+                        "in ikebana)"
+                    ]
+                },
+                {
+                    "kanji": "飲み水",
+                    "reading": "のみみず",
+                    "meanings": [
+                        "drinking water",
+                        "potable water"
+                    ]
+                },
+                {
+                    "kanji": "呼び水",
+                    "reading": "よびみず",
+                    "meanings": [
+                        "pump-priming",
+                        "rousing",
+                        "stimulation"
+                    ]
+                }
+            ],
+            "on": [
+                {
+                    "kanji": "水",
+                    "reading": "スイ",
+                    "meanings": [
+                        "Wednesday",
+                        "shaved ice (served with flavored syrup)",
+                        "water (fifth of the five elements)"
+                    ]
+                },
+                {
+                    "kanji": "水位",
+                    "reading": "スイイ",
+                    "meanings": [
+                        "water level"
+                    ]
+                },
+                {
+                    "kanji": "用水",
+                    "reading": "ヨウスイ",
+                    "meanings": [
+                        "irrigation water",
+                        "water for fire",
+                        "city water",
+                        "cistern water"
+                    ]
+                },
+                {
+                    "kanji": "浄水",
+                    "reading": "ジョウスイ",
+                    "meanings": [
+                        "clean water",
+                        "purified water"
+                    ]
+                }
+            ]
+        }
+    }
+}
